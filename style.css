@@ -1,0 +1,102 @@
+@font-face {  font-family: "souther";  src: url(font/Souther-Regular.otf);}
+@font-face {  font-family: "Galleds stars";  src: url(font/Galleds\ Stars.otf);}
+@font-face {  font-family: "ADAM.CG PRO";  src: url(font/ADAM.CG\ PRO.otf);}
+@font-face {  font-family: "NeonBines";  src: url(font/NeonBines.otf);}
+@font-face {  font-family: "Ananda Akchyar bold";  src: url(font/Ananda\ Akchyar\ bold.ttf);}
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200&family=Poppins:ital,wght@1,600&family=Sacramento&display=swap");
+* {
+  margin: 0;  padding: 0;  box-sizing: border-box;
+}
+body {
+  background-image: url(imeges/wave_background\(1\).svg);  background-repeat: no-repeat;  background-attachment: fixed;
+}
+audio {
+  display: none;
+}
+.main_div {
+  position: relative;  display: flex;  justify-content: center;  height: 800px;
+}
+.textnode {
+  font-family: "Galleds stars";  height: 100%;  width: 100%;  font-size: 350px;  text-transform: uppercase;  font-weight: bolder;  overflow: hidden;  color: rgba(0, 0, 0, 0.836);  word-spacing: 2px;  display: flex;  justify-content: center;  flex-direction: column;  align-items: center;  opacity: 0;  overflow: hidden;  z-index: 0;  animation: textnodeanim 5s ease-in-out;}
+@keyframes textnodeanim {
+  0% {
+    transform: scale(0.9);
+    z-index: 0;
+  }
+  10% {    opacity: 0.1;    z-index: 3;  }
+  30% {    opacity: 0.3;    z-index: 5;  }
+  70% {    opacity: 0.4;    z-index: 2;  }
+  80% {    opacity: 0.2;  }
+  90% {    opacity: 0.1;  }
+  100% {    opacity: 0;    z-index: 0;  }
+}
+.music_container {
+  width: 350px;  height: 550px;  position: fixed;  top: 5vh;  background-color: whitesmoke;  background: linear-gradient(90deg, rgb(117, 58, 136), rgb(236, 0, 140));  border-radius: 10px;  margin-top: 20px;  text-align: center;  box-shadow: 0 12px 30px 5px rgba(0, 0, 0, 0.5);
+}
+.music_container #title {
+  margin-top: 40px;  text-transform: uppercase;  letter-spacing: 2px;  word-spacing: 5px;  color: #171717;  font-size: 25px;  font-weight: bold;  font-family: "ADAM.CG PRO";  text-shadow: 0 3px 5px rgb(0, 0, 0, 0.3);
+}
+.music_container #artist {
+  color: #cccaca;  text-transform: capitalize;  letter-spacing: 1px;  font-size: 12px;  margin-bottom: 15px;  font-weight: 300;  margin-top: 20px;  font-family: "NeonBines";
+}
+.img_container {
+  width: 250px;  height: 250px; margin: auto;
+}
+#playerimg {
+  border-radius: 50%;  height: 100%;  object-fit: cover;  width: 100%;  box-shadow: 0 12px 30px 5px rgba(0, 0, 0, 0.5);  z-index: 18;
+}
+.music_controles {
+  display: flex;  flex-direction: row;  justify-content: center;  align-items: center;  gap: 50px;  margin: 50px;
+}
+.music_controles .fas {
+  color: #111111;  font-size: 20px;  cursor: pointer;  filter: drop-shadow(0 12px 30px 5px rgba(0, 0, 0, 0.4));
+}
+#prev {
+  width: 50px;  height: 50px;  transform: rotate(180deg);
+}
+#prev:hover {
+  filter: opacity(0.7);
+}
+#play {
+  width: 70px;  height: 70px;
+}
+#play:hover {
+  filter: opacity(0.7);
+}
+#paus {
+  width: 70px;  height: 70px;  position: absolute;  visibility: hidden;  cursor: pointer;
+}
+#paus:hover {
+  filter: opacity(0.7);
+}
+#next {
+  width: 50px;  height: 50px;
+}
+#next:hover {
+  filter: opacity(0.7);
+}
+.developername {
+  font-family: "ADAM.CG PRO";  font-weight: bolder;  margin-top: -25px;  margin-right: 10px;  opacity: 0.2;  text-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;  font-size: 12px;  text-align: end;
+}
+.anime {
+  animation: animName 10s linear infinite;  transition: all;
+}
+@keyframes animName {
+  0% {    transform: rotate(0deg);  }  100% {    transform: rotate(360deg);  }
+}
+.animePaus {
+  animation: animPaus 10s step-end;
+}
+@keyframes animPaus {
+  0% {  }  100% {    transform: rotate(360deg);  }
+}
+/* progresss class=============== */
+.progressbar_container {
+  width: 100%;  height: auto;  padding: 10px 0;  margin-top: 10px;
+}
+.progress_div {
+  background-color: red;  width: 90%;  height: 5px;  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.07), 0 2px 4px rgba(0, 0, 0, 0.07),    0 4px 8px rgba(0, 0, 0, 0.07), 0 8px 16px rgba(0, 0, 0, 0.07),    0 16px 32px rgba(0, 0, 0, 0.07), 0 32px, 64px rgba(0, 0, 0, 0.07);  margin: auto;  border-radius: 40px;  position: relative;  margin-top: 5px;  transition: all 1s linear;  cursor: pointer;  appearance: none;  z-index: 8;
+}
+.progress {
+  position: absolute; top: 0; left: 0; width: 90%; background-color: black; z-index: 9;
+}

@@ -1,0 +1,94 @@
+<!-- D:\Lecture\MERN\my projects\1 java script bigginer projects\0.0.2 project 2 {}HTML,CSS,JS} -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AP DHILLON:PLAYER</title>
+    <link rel="shortcut icon" href="imeges/images.jpeg" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="main_div">
+      <div class="textnode">dhillon</div>
+
+      <div class="music_container">
+        <h2 id="title">All Night</h2>
+        <h3 id="artist">Ap Dhillon</h3>
+        <div class="img_container">
+          <img
+            class=""
+            id="playerimg"
+            src="media/All Night.png"
+            alt="main img"
+          />
+        </div>
+        <audio src="media/All Night.mp3" controls au.toplay></audio>
+
+        <!-- progress bar -->
+
+        <!-- 
+
+
+                                                                                        <div class="progressbar_container" id="progress_container">
+
+                                                                                            <div class="progress_duration_meter">
+
+                                                                                                <div id="current_time">0:00</div>
+                                                                                                <div id="duration">2:44</div>
+
+                                                                                            </div>
+
+                                                                                            <div class="progress_div"id="progress_div">
+
+                                                                                                <div class="progress" id="progress">
+
+                                                                                                </div>
+                                                                                            </div>
+
+                                                                                        </div>           -->
+
+        <!-- controles -->
+
+        <div class="music_controles">
+          <img
+            class="fas fa-backward"
+            id="prev"
+            src="imeges/controles/play-fill.svg"
+            alt="previus"
+            title="previus"
+            onclick="preMusic()"
+          />
+
+          <img
+            class="fas fa-play"
+            id="play"
+            src="imeges/controles/play-circle.svg"
+            alt="play "
+            title="play"
+            onclick="playMusic()"
+          />
+
+          <img
+            src="imeges/controles/pause-circle.svg"
+            id="paus"
+            alt=""
+            onclick="pausMusic()"
+          />
+
+          <img
+            class="fas fa-forward"
+            id="next"
+            src="imeges/controles/play-fill.svg"
+            alt=""
+            onclick="nextMusic()"
+          />
+        </div>
+
+        <div class="developername">HITANSH</div>
+      </div>
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>
