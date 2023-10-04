@@ -14,7 +14,6 @@ MUSIC PLAYER using JAVA SCRIPT , CSS , HTML >>>>>there is a singer name AP DHILL
 
 ![image](https://github.com/Kumar0Hitansh/0.0.4-project_4_Music_Player_HTML_CSS_JS/assets/121010426/cc10d7ac-c7a9-4afd-8e71-b0cbde665587)
 
-![image](https://github.com/Kumar0Hitansh/0.0.4-project_4_Music_Player_HTML_CSS_JS/assets/121010426/948ae56d-c6fc-41d4-ad31-1150630f8288)
 
 
 
